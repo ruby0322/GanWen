@@ -1,0 +1,326 @@
+{
+    "1000": [
+        "\u6587\u5b78\u9662",
+        "\u6587\u5b78\u9662"
+    ],
+    "1010": [
+        "\u4e2d\u570b\u6587\u5b78\u7cfb",
+        "\u4e2d\u6587\u7cfb"
+    ],
+    "1011": [
+        "\u4e2d\u570b\u6587\u5b78\u7cfb\u570b\u969b\u5b78\u751f\u5b78\u58eb\u73ed",
+        "\u4e2d\u6587\u7cfb\u570b\u969b\u73ed"
+    ],
+    "1020": [
+        "\u5916\u570b\u8a9e\u6587\u5b78\u7cfb",
+        "\u5916\u6587\u7cfb"
+    ],
+    "1030": [
+        "\u6b77\u53f2\u5b78\u7cfb",
+        "\u6b77\u53f2\u7cfb"
+    ],
+    "1040": [
+        "\u54f2\u5b78\u7cfb",
+        "\u54f2\u5b78\u7cfb"
+    ],
+    "1050": [
+        "\u4eba\u985e\u5b78\u7cfb",
+        "\u4eba\u985e\u7cfb"
+    ],
+    "1060": [
+        "\u5716\u66f8\u8cc7\u8a0a\u5b78\u7cfb",
+        "\u5716\u8cc7\u7cfb"
+    ],
+    "1070": [
+        "\u65e5\u672c\u8a9e\u6587\u5b78\u7cfb",
+        "\u65e5\u6587\u7cfb"
+    ],
+    "1090": [
+        "\u6232\u5287\u5b78\u7cfb",
+        "\u6232\u5287\u7cfb"
+    ],
+    "2000": [
+        "\u7406\u5b78\u9662",
+        "\u7406\u5b78\u9662"
+    ],
+    "2010": [
+        "\u6578\u5b78\u7cfb",
+        "\u6578\u5b78\u7cfb"
+    ],
+    "2020": [
+        "\u7269\u7406\u5b78\u7cfb",
+        "\u7269\u7406\u7cfb"
+    ],
+    "2030": [
+        "\u5316\u5b78\u7cfb",
+        "\u5316\u5b78\u7cfb"
+    ],
+    "2040": [
+        "\u5730\u8cea\u79d1\u5b78\u7cfb",
+        "\u5730\u8cea\u7cfb"
+    ],
+    "2070": [
+        "\u5fc3\u7406\u5b78\u7cfb",
+        "\u5fc3\u7406\u7cfb"
+    ],
+    "2080": [
+        "\u5730\u7406\u74b0\u5883\u8cc7\u6e90\u5b78\u7cfb",
+        "\u5730\u7406\u7cfb"
+    ],
+    "2090": [
+        "\u5927\u6c23\u79d1\u5b78\u7cfb",
+        "\u5927\u6c23\u7cfb"
+    ],
+    "3000": [
+        "\u6cd5\u5b78\u9662",
+        "\u6cd5\u5b78\u9662"
+    ],
+    "3020": [
+        "\u653f\u6cbb\u5b78\u7cfb",
+        "\u653f\u6cbb\u7cfb"
+    ],
+    "3021": [
+        "\u653f\u6cbb\u5b78\u7cfb\u653f\u6cbb\u7406\u8ad6\u7d44",
+        "\u653f\u6cbb\u7cfb\u653f\u8ad6\u7d44"
+    ],
+    "3022": [
+        "\u653f\u6cbb\u5b78\u7cfb\u570b\u969b\u95dc\u4fc2\u7d44",
+        "\u653f\u6cbb\u7cfb\u570b\u95dc\u7d44"
+    ],
+    "3023": [
+        "\u653f\u6cbb\u5b78\u7cfb\u516c\u5171\u884c\u653f\u7d44",
+        "\u653f\u6cbb\u7cfb\u516c\u884c\u7d44"
+    ],
+    "3030": [
+        "\u7d93\u6fdf\u5b78\u7cfb",
+        "\u7d93\u6fdf\u7cfb"
+    ],
+    "3050": [
+        "\u793e\u6703\u5b78\u7cfb",
+        "\u793e\u6703\u7cfb"
+    ],
+    "3100": [
+        "\u793e\u6703\u5de5\u4f5c\u5b78\u7cfb",
+        "\u793e\u5de5\u7cfb"
+    ],
+    "4000": [
+        "\u91ab\u5b78\u9662",
+        "\u91ab\u5b78\u9662"
+    ],
+    "4010": [
+        "\u91ab\u5b78\u7cfb",
+        "\u91ab\u5b78\u7cfb"
+    ],
+    "4020": [
+        "\u7259\u91ab\u5b78\u7cfb",
+        "\u7259\u91ab\u7cfb"
+    ],
+    "4030": [
+        "\u85e5\u5b78\u7cfb",
+        "\u85e5\u5b78\u7cfb"
+    ],
+    "4040": [
+        "\u91ab\u5b78\u6aa2\u9a57\u66a8\u751f\u7269\u6280\u8853\u5b78\u7cfb",
+        "\u91ab\u6280\u7cfb"
+    ],
+    "4060": [
+        "\u8b77\u7406\u5b78\u7cfb",
+        "\u8b77\u7406\u7cfb"
+    ],
+    "4080": [
+        "\u7269\u7406\u6cbb\u7642\u5b78\u7cfb",
+        "\u7269\u6cbb\u7cfb"
+    ],
+    "4081": [
+        "\u7269\u7406\u6cbb\u7642\u5b78\u7cfb",
+        "\u7269\u6cbb\u7cfb"
+    ],
+    "4090": [
+        "\u8077\u80fd\u6cbb\u7642\u5b78\u7cfb",
+        "\u8077\u6cbb\u7cfb"
+    ],
+    "4120": [
+        "\u5b78\u58eb\u5f8c\u8b77\u7406\u5b78\u7cfb",
+        "\u5f8c\u8b77\u7406\u7cfb"
+    ],
+    "5000": [
+        "\u5de5\u5b78\u9662",
+        "\u5de5\u5b78\u9662"
+    ],
+    "5010": [
+        "\u571f\u6728\u5de5\u7a0b\u5b78\u7cfb",
+        "\u571f\u6728\u7cfb"
+    ],
+    "5020": [
+        "\u6a5f\u68b0\u5de5\u7a0b\u5b78\u7cfb",
+        "\u6a5f\u68b0\u7cfb"
+    ],
+    "5040": [
+        "\u5316\u5b78\u5de5\u7a0b\u5b78\u7cfb",
+        "\u5316\u5de5\u7cfb"
+    ],
+    "5050": [
+        "\u5de5\u7a0b\u79d1\u5b78\u53ca\u6d77\u6d0b\u5de5\u7a0b\u5b78\u7cfb",
+        "\u5de5\u79d1\u6d77\u6d0b\u7cfb"
+    ],
+    "5070": [
+        "\u6750\u6599\u79d1\u5b78\u8207\u5de5\u7a0b\u5b78\u7cfb",
+        "\u6750\u6599\u7cfb"
+    ],
+    "5080": [
+        "\u91ab\u5b78\u5de5\u7a0b\u5b78\u7cfb",
+        "\u91ab\u5de5\u7cfb"
+    ],
+    "6000": [
+        "\u8fb2\u5b78\u9662",
+        "\u8fb2\u5b78\u9662"
+    ],
+    "6010": [
+        "\u8fb2\u85dd\u5b78\u7cfb",
+        "\u8fb2\u85dd\u7cfb"
+    ],
+    "6020": [
+        "\u751f\u7269\u74b0\u5883\u7cfb\u7d71\u5de5\u7a0b\u5b78\u7cfb",
+        "\u751f\u5de5\u7cfb"
+    ],
+    "6030": [
+        "\u8fb2\u696d\u5316\u5b78\u7cfb",
+        "\u8fb2\u5316\u7cfb"
+    ],
+    "6050": [
+        "\u68ee\u6797\u74b0\u5883\u66a8\u8cc7\u6e90\u5b78\u7cfb",
+        "\u68ee\u6797\u74b0\u8cc7\u7cfb"
+    ],
+    "6060": [
+        "\u52d5\u7269\u79d1\u5b78\u6280\u8853\u5b78\u7cfb",
+        "\u52d5\u7269\u79d1\u6280\u7cfb"
+    ],
+    "6070": [
+        "\u8fb2\u696d\u7d93\u6fdf\u5b78\u7cfb",
+        "\u8fb2\u7d93\u7cfb"
+    ],
+    "6080": [
+        "\u5712\u85dd\u66a8\u666f\u89c0\u5b78\u7cfb",
+        "\u5712\u85dd\u7cfb"
+    ],
+    "6090": [
+        "\u7378\u91ab\u5b78\u7cfb",
+        "\u7378\u91ab\u7cfb"
+    ],
+    "6100": [
+        "\u751f\u7269\u7522\u696d\u50b3\u64ad\u66a8\u767c\u5c55\u5b78\u7cfb",
+        "\u751f\u50b3\u7cfb"
+    ],
+    "6110": [
+        "\u751f\u7269\u6a5f\u96fb\u5de5\u7a0b\u5b78\u7cfb",
+        "\u751f\u7269\u6a5f\u96fb\u7cfb"
+    ],
+    "6120": [
+        "\u6606\u87f2\u5b78\u7cfb",
+        "\u6606\u87f2\u7cfb"
+    ],
+    "6130": [
+        "\u690d\u7269\u75c5\u7406\u8207\u5fae\u751f\u7269\u5b78\u7cfb",
+        "\u690d\u5fae\u7cfb"
+    ],
+    "7000": [
+        "\u7ba1\u7406\u5b78\u9662",
+        "\u7ba1\u7406\u5b78\u9662"
+    ],
+    "7010": [
+        "\u5de5\u5546\u7ba1\u7406\u5b78\u7cfb",
+        "\u5de5\u7ba1\u7cfb"
+    ],
+    "7011": [
+        "\u5de5\u5546\u7ba1\u7406\u5b78\u7cfb\u4f01\u696d\u7ba1\u7406\u7d44",
+        "\u5de5\u7ba1\u7cfb\u4f01\u7ba1\u7d44"
+    ],
+    "7012": [
+        "\u5de5\u5546\u7ba1\u7406\u5b78\u7cfb\u79d1\u6280\u7ba1\u7406\u7d44",
+        "\u5de5\u7ba1\u7cfb\u79d1\u7ba1\u7d44"
+    ],
+    "7020": [
+        "\u6703\u8a08\u5b78\u7cfb",
+        "\u6703\u8a08\u7cfb"
+    ],
+    "7030": [
+        "\u8ca1\u52d9\u91d1\u878d\u5b78\u7cfb",
+        "\u8ca1\u91d1\u7cfb"
+    ],
+    "7040": [
+        "\u570b\u969b\u4f01\u696d\u5b78\u7cfb",
+        "\u570b\u4f01\u7cfb"
+    ],
+    "7050": [
+        "\u8cc7\u8a0a\u7ba1\u7406\u5b78\u7cfb",
+        "\u8cc7\u7ba1\u7cfb"
+    ],
+    "8000": [
+        "\u516c\u5171\u885b\u751f\u5b78\u9662",
+        "\u516c\u885b\u5b78\u9662"
+    ],
+    "8010": [
+        "\u516c\u5171\u885b\u751f\u5b78\u7cfb",
+        "\u516c\u885b\u7cfb"
+    ],
+    "9000": [
+        "\u96fb\u6a5f\u5b78\u9662",
+        "\u96fb\u6a5f\u5b78\u9662"
+    ],
+    "9010": [
+        "\u96fb\u6a5f\u5de5\u7a0b\u5b78\u7cfb",
+        "\u96fb\u6a5f\u7cfb"
+    ],
+    "9020": [
+        "\u8cc7\u8a0a\u5de5\u7a0b\u5b78\u7cfb",
+        "\u8cc7\u5de5\u7cfb"
+    ],
+    "A000": [
+        "\u6cd5\u5f8b\u5b78\u9662",
+        "\u6cd5\u5f8b\u5b78\u9662"
+    ],
+    "A010": [
+        "\u6cd5\u5f8b\u5b78\u7cfb",
+        "\u6cd5\u5f8b\u7cfb"
+    ],
+    "A011": [
+        "\u6cd5\u5f8b\u5b78\u7cfb\u6cd5\u5b78\u7d44",
+        "\u6cd5\u5f8b\u7cfb\u6cd5\u5b78\u7d44"
+    ],
+    "A012": [
+        "\u6cd5\u5f8b\u5b78\u7cfb\u53f8\u6cd5\u7d44",
+        "\u6cd5\u5f8b\u7cfb\u53f8\u6cd5\u7d44"
+    ],
+    "A013": [
+        "\u6cd5\u5f8b\u5b78\u7cfb\u8ca1\u7d93\u6cd5\u5b78\u7d44",
+        "\u6cd5\u5f8b\u7cfb\u8ca1\u6cd5\u7d44"
+    ],
+    "B000": [
+        "\u751f\u547d\u79d1\u5b78\u9662",
+        "\u751f\u547d\u79d1\u5b78\u9662"
+    ],
+    "B010": [
+        "\u751f\u547d\u79d1\u5b78\u7cfb",
+        "\u751f\u79d1\u7cfb"
+    ],
+    "B020": [
+        "\u751f\u5316\u79d1\u6280\u5b78\u7cfb",
+        "\u751f\u6280\u7cfb"
+    ],
+    "H040": [
+        "\u570b\u969b\u9ad4\u80b2\u904b\u52d5\u4e8b\u52d9\u5b78\u58eb\u5b78\u4f4d\u5b78\u7a0b",
+        "\u9ad4\u80b2\u5b78\u7a0b"
+    ],
+    "O010": [
+        "\u570b\u969b\u4e8b\u52d9\u8655",
+        "\u570b\u969b\u4e8b\u52d9\u8655"
+    ],
+    "O020": [
+        "\u570b\u969b\u5b78\u9662",
+        "\u570b\u969b\u5b78\u9662"
+    ],
+    "Z010": [
+        "\u5275\u65b0\u9818\u57df\u5b78\u58eb\u5b78\u4f4d\u5b78\u7a0b",
+        "\u5275\u65b0\u5b78\u7a0b"
+    ]
+}
