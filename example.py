@@ -1,6 +1,6 @@
 import json
 import requests
-
+import timeit
 
 def fetch_data(fetch_url: str) -> dict:
     return json.loads(
@@ -25,10 +25,17 @@ def main() -> int:
         params_str = f'{dept_name=}'.replace('\'', '')
     
     fetch_url = f'https://ntu-dept-code.herokuapp.com/{query_type}?{params_str}'
+
+    print('='*54)
     print(f'{fetch_url=}')
+    print('='*54)
+
+    print('Fetching data...')
+
+    print(f'{"搜尋結果":{"="}^50}')
     print(fetch_data(fetch_url))
+
     return 0
 
 if __name__ == '__main__':
     main()
-    
