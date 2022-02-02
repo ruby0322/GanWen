@@ -1,4 +1,4 @@
-from os import stat
+import os
 from flask import Flask, request, abort
 from result import Result
 
@@ -24,5 +24,6 @@ def api() -> str:
     return Result(dept_name).as_json_dict().__repr__()
 
 if __name__ == '__main__':
-    app.run()
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
     
