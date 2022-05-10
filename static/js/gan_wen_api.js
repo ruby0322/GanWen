@@ -26,7 +26,8 @@ const convert = async () => {
         fetchGanTextAPI('哇，你什麼都沒放，還想要我加入什麼幹元素，你很聰明欸。');
 };
 
-const clear = () => {
+const resetInput = () => {
+    console.log('dawdaw');
     document.querySelector('#input').value = '';
     document.querySelector('#input').innerHTML = '';
     convert();
