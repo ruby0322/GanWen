@@ -10,7 +10,7 @@ HALF_COMMA = ','
 HALF_PERIOD = '.'
 HALF_EXCLAMATION = '!'
 
-PUNCTUATION_POOL = '，。！,.!\n '
+PUNCTUATION_POOL = '，。！,.!\n'
 
 def generate_random_emoji_sequence() -> str:
     return ' ' + ''.join([random.choice(EMO_POOL)*2 for _ in range(2)]) + ' '
