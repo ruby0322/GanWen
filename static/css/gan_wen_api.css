@@ -1,0 +1,22 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mar {
+    margin-top: 1.2rem;
+    margin-bottom: .4rem;
+}
+
+.tf {
+    height: 6rem;
+}
+
+.rf {
+    width: 100%; 
+    display: flex; 
+    justify-content:flex-end; 
+    flex-direction: row;
+}
