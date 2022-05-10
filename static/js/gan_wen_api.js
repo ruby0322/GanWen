@@ -18,7 +18,10 @@ const fetchGanTextAPI = async toConvert => {
 };
 
 const convert = async () => {
-    const toConvert = document.querySelector('#input').value.replace('\n', '[[endl]]');
+    const toConvert = document.querySelector('#input').value.replaceAll('\n', '[[endl]]');
     console.log(toConvert);
-    fetchGanTextAPI(toConvert);
+    if (toConvert.length > 0)
+        fetchGanTextAPI(toConvert);
+    else
+        fetchGanTextAPI('哇，你什麼都沒放，還想要我加入什麼幹元素，你很聰明欸。');
 };
