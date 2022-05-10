@@ -1,4 +1,7 @@
 import random
+import requests
+from bs4 import BeautifulSoup
+import urllib
 
 EMO_POOL = [
     '😂', '👍', '🤙', '😎', '😳', 
@@ -46,3 +49,28 @@ def convert(string: str) -> str:
             additive_gen = random.choice([generate_random_emoji_sequence, generate_random_gan_text])
             string = string.replace(punctuation, additive_gen(), 1)
     return string
+
+def random_wiki() -> dict:
+    url = "https://zh.wikipedia.org/wiki/Special:%E9%9A%8F%E6%9C%BA%E9%A1%B5%E9%9D%A2"
+
+    headers = {
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+    }
+
+    rq = requests.get(url, headers=headers)
+    soup = BeautifulSoup(rq.text, 'lxml')
+    header = soup.find('div', id='content')
+    body = soup.find('div', id='bodyContent')
+
+    title = header.find('h1', id='firstHeading').text
+    content = body.find(
+        'div', class_='mw-parser-output'
+    ).find('p').text.replace(' ', '')
+    link = 'https://zh.wikipedia.org/wiki/' + urllib.parse.quote(title)
+    return {
+        'title': title,
+        'content': content,
+        'link': link
+    }
+
+print(random_wiki())

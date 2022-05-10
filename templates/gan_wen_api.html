@@ -36,6 +36,8 @@
             <textarea maxlength="850" type="text" class="form-control tf" id="input" placeholder="「正經的文字段落」" style="outline: none; background-color: #06070A; color: #FFFFFF; border-style: none; border-color: Transparent; resize: none;">這段日子以來，我一直想對你說三個字，但又怕說了連普通朋友也做不成，可我控制不住，還是想說：「借點錢！」</textarea>
 
             <div class="rf mar">
+                <button class="btn btn-outline-primary" type="button" onclick="clear();" style="margin-right: .5rem;">清除</button>
+                <button class="btn btn-outline-primary" type="button" onclick="randWiki();" style="margin-right: .5rem;">隨機文字段落</button>
                 <button class="btn btn-outline-primary" type="button" onclick="convert();">加入幹元素</button>
             </div>
 
@@ -50,26 +52,26 @@
             <div>
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#gan1" type="button" role="tab" aria-controls="pills-home" aria-selected="true">範例幹文一</button>
+                      <button class="nav-link active" id="gan1-tab" data-bs-toggle="pill" data-bs-target="#gan1" type="button" role="tab" aria-controls="pills-home" aria-selected="true">範例幹文一</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#gan2" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">範例幹文二</button>
+                      <button class="nav-link" id="gan2-tab" data-bs-toggle="pill" data-bs-target="#gan2" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">範例幹文二</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#gan3" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">範例幹文三</button>
+                      <button class="nav-link" id="gan3-tab" data-bs-toggle="pill" data-bs-target="#gan3" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">範例幹文三</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#gan4" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">範例幹文四</button>
+                      <button class="nav-link" id="gan4-tab" data-bs-toggle="pill" data-bs-target="#gan4" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">範例幹文四</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#copy" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">更多複製文</button>
+                      <button class="nav-link" id="copy-tab" data-bs-toggle="pill" data-bs-target="#copy" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">更多複製文</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#what" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">這是什麼梗</button>
+                      <button class="nav-link" id="what-tab" data-bs-toggle="pill" data-bs-target="#what" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">這是什麼梗</button>
                     </li>
                   </ul>
                   <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="gan1" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="tab-pane fade show active" id="gan1" role="tabpanel" aria-labelledby="gan1-tab">
                         原文：
                         這段日子以來，我一直想對你說三個字，但又怕說了連普通朋友也做不成，可我控制不住，還是想說：「借點錢！」
                         <br>
@@ -77,7 +79,7 @@
                         幹文：
                         這段日子以來💪💪 ⚡ ⚡我一直想對你說三個字 peace 但又怕說了連普通朋友也做不成 笑死😂😂 可我控制不住 skrskr🤙🤙 還是想說：「借點錢🤙🤙👌👌」
                     </div>
-                    <div class="tab-pane fade" id="gan2" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="tab-pane fade" id="gan2" role="tabpanel" aria-labelledby="gan2-tab">
                         原文：
                         事實證明，感情經得起風雨，卻經不起平淡；友情經得起平淡，卻經不起風雨。
                         <br>
@@ -85,7 +87,7 @@
                         幹文：
                         事實證明👍👍😎😎感情經得起風雨 笑死😂😂 卻經不起平淡；友情經得起平淡 很厲害欸😎😎 卻經不起風雨 笑死😂😂 
                     </div>
-                    <div class="tab-pane fade" id="gan3" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="tab-pane fade" id="gan3" role="tabpanel" aria-labelledby="gan3-tab">
                         原文：
                         去愛吧，如同沒有受過傷一樣；歌唱吧，如同沒人聆聽一樣；跳舞吧，如同沒人欣賞一樣；工作吧，就當沒有工資一樣；生活吧，就當今天是未日一樣。
                         <br>
@@ -93,7 +95,7 @@
                         幹文：
                         去愛吧 笑死😂😂 如同沒有受過傷一樣；歌唱吧🖖🖖👍👍如同沒人聆聽一樣；跳舞吧👍👍💪💪如同沒人欣賞一樣；工作吧💪💪👌👌就當沒有工資一樣；生活吧👌👌😳😳就當今天是未日一樣 哈哈是我啦 
                     </div>
-                    <div class="tab-pane fade" id="gan4" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="tab-pane fade" id="gan4" role="tabpanel" aria-labelledby="gan4-tab">
                         原文：
                         波講過一句話，進了森林我就是王，敵人就是陌生事物挑戰，然而森林就是藍波的舒適圈，別離開你的舒適圈做挑戰，那只會讓你的失敗機率變高，然而高失敗率，並不會讓你更開心。
                         <br>
@@ -101,7 +103,7 @@
                         幹文：
                         波講過一句話 很厲害欸😎😎 進了森林我就是王👌👌💦💦敵人就是陌生事物挑戰 ⚡ ⚡💦💦然而森林就是藍波的舒適圈 笑死😂😂 別離開你的舒適圈做挑戰🈹🈹😎😎那只會讓你的失敗機率變高 哈哈是我啦 然而高失敗率 skrskr🤙🤙 並不會讓你更開心 笑死😂😂 
                     </div>
-                    <div class="tab-pane fade" id="copy" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="tab-pane fade" id="copy" role="tabpanel" aria-labelledby="copy-tab">
                         <ul>
                             <li>
                                 <a href="https://forum.gamer.com.tw/C.php?bsn=60076&snA=5569565">
@@ -120,7 +122,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="tab-pane fade" id="what" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="tab-pane fade" id="what" role="tabpanel" aria-labelledby="what-tab">
                         <h5>
                             複製文
                         </h5>

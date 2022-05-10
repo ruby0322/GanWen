@@ -18,6 +18,10 @@ def gan_text() -> str:
 def gan_gui():
     return render_template('gan_wen_api.html')
 
+@app.route('rand_wiki', methods=['GET'])
+def rand_wiki():
+    return rand_wiki()
+
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)

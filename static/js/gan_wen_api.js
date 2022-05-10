@@ -25,3 +25,16 @@ const convert = async () => {
     else
         fetchGanTextAPI('哇，你什麼都沒放，還想要我加入什麼幹元素，你很聰明欸。');
 };
+
+const clear = () => {
+    document.querySelector('#output').value = '';
+    document.querySelector('#output').innerHTML = '';
+};
+
+const randWiki = async () => {
+    apiUrl = 'https://ganwenapi.herokuapp.com/rand_wiki';
+
+    fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => fetchGanTextAPI({converted: data['content']}));
+};
