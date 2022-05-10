@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幹文 GanWen</title>
+    <link rel="stylesheet" href="../static/css/gan_wen_api.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script type="text/javascript" src="../static/js/gan_wen_api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body class="all">
+    <nav class="navbar sticky-top navbar-light light navbar-dark shadow-5-strong" style="background: rgba(183, 185, 246, 0.05); backdrop-filter: blur(3px);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="margin-left: .8rem;">
+                <h1>
+                    〔 幹文 GanWen 〕
+                </h1>
+            </a>
+            <a href="https://github.com/ruby0322" target="_blank" style="text-decoration: none;">
+                @ruby0322
+            </a>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="content-width mar">
+            <h3 style="text-align: left;">
+                為文字段落加入幹元素
+            </h3>
+            <h6>
+                〔字數上限：850 字〕
+            </h6>
+        </div>
+        <div class="content-width" class="mar">
+            <textarea maxlength="850" type="text" class="form-control tf" id="input" placeholder="「正經的文字段落」" style="outline: none; background-color: #06070A; color: #FFFFFF; border-style: none; border-color: Transparent; resize: none;">這段日子以來，我一直想對你說三個字，但又怕說了連普通朋友也做不成，可我控制不住，還是想說：「借點錢！」</textarea>
+            
+            <div class="rf mar">
+                <button class="btn btn-outline-primary" type="button" onclick="resetInput();" style="margin-right: .5rem;">清除</button>
+                <button class="btn btn-outline-primary" type="button" onclick="randWiki();" style="margin-right: .5rem;">隨機</button>
+                <button class="btn btn-outline-primary" type="button" onclick="convert();">加入幹元素</button>
+            </div>
+            
+        </div>
+        <div class="content-width">
+            <h6>
+                〔快傳給朋友，或留言在朋友貼文下方，煩死他們ＸＤ〕
+            </h6>
+        </div>
+        <div class="content-width" class="mar">
+
+            <div class="input-group mb-3 mar">
+                <textarea class="form-control tf" type="text" value="這段日子以來 peace 我一直想對你說三個字 skrskr🤙🤙 但又怕說了連普通朋友也做不成🤙🤙🤙🤙可我控制不住💦💦💪💪還是想說：「借點錢 笑死😂😂 」" id="output" style="outline: none; background-color: #06070A; color: #FFFFFF; border-style: none; border-color: Transparent; resize: none;" readonly>這段日子以來 peace 我一直想對你說三個字 skrskr🤙🤙 但又怕說了連普通朋友也做不成🤙🤙🤙🤙可我控制不住💦💦💪💪還是想說：「借點錢 笑死😂😂 」</textarea>
+                <button class="btn btn-outline-primary" type="button" onclick="copy();">複製</button>
+            </div>
+        </div>
+        <br>
+        <div class="content-width" class="lf mar">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="gan1-tab" data-bs-toggle="pill" data-bs-target="#gan1" type="button" role="tab" aria-controls="pills-home" aria-selected="true">範例幹文一</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="gan2-tab" data-bs-toggle="pill" data-bs-target="#gan2" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">範例幹文二</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="gan3-tab" data-bs-toggle="pill" data-bs-target="#gan3" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">範例幹文三</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="gan4-tab" data-bs-toggle="pill" data-bs-target="#gan4" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">範例幹文四</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="copy-tab" data-bs-toggle="pill" data-bs-target="#copy" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">更多複製文</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="what-tab" data-bs-toggle="pill" data-bs-target="#what" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">這是什麼梗</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="gan1" role="tabpanel" aria-labelledby="gan1-tab">
+                    原文：
+                    這段日子以來，我一直想對你說三個字，但又怕說了連普通朋友也做不成，可我控制不住，還是想說：「借點錢！」
+                    <br>
+                    <br>
+                    幹文：
+                    這段日子以來💪💪 ⚡ ⚡我一直想對你說三個字 peace 但又怕說了連普通朋友也做不成 笑死😂😂 可我控制不住 skrskr🤙🤙 還是想說：「借點錢🤙🤙👌👌」
+                </div>
+                <div class="tab-pane fade" id="gan2" role="tabpanel" aria-labelledby="gan2-tab">
+                    原文：
+                    事實證明，感情經得起風雨，卻經不起平淡；友情經得起平淡，卻經不起風雨。
+                    <br>
+                    <br>
+                    幹文：
+                    事實證明👍👍😎😎感情經得起風雨 笑死😂😂 卻經不起平淡；友情經得起平淡 很厲害欸😎😎 卻經不起風雨 笑死😂😂 
+                </div>
+                <div class="tab-pane fade" id="gan3" role="tabpanel" aria-labelledby="gan3-tab">
+                    原文：
+                    去愛吧，如同沒有受過傷一樣；歌唱吧，如同沒人聆聽一樣；跳舞吧，如同沒人欣賞一樣；工作吧，就當沒有工資一樣；生活吧，就當今天是未日一樣。
+                    <br>
+                    <br>
+                    幹文：
+                    去愛吧 笑死😂😂 如同沒有受過傷一樣；歌唱吧🖖🖖👍👍如同沒人聆聽一樣；跳舞吧👍👍💪💪如同沒人欣賞一樣；工作吧💪💪👌👌就當沒有工資一樣；生活吧👌👌😳😳就當今天是未日一樣 哈哈是我啦 
+                </div>
+                <div class="tab-pane fade" id="gan4" role="tabpanel" aria-labelledby="gan4-tab">
+                    原文：
+                    波講過一句話，進了森林我就是王，敵人就是陌生事物挑戰，然而森林就是藍波的舒適圈，別離開你的舒適圈做挑戰，那只會讓你的失敗機率變高，然而高失敗率，並不會讓你更開心。
+                    <br>
+                    <br>
+                    幹文：
+                    波講過一句話 很厲害欸😎😎 進了森林我就是王👌👌💦💦敵人就是陌生事物挑戰 ⚡ ⚡💦💦然而森林就是藍波的舒適圈 笑死😂😂 別離開你的舒適圈做挑戰🈹🈹😎😎那只會讓你的失敗機率變高 哈哈是我啦 然而高失敗率 skrskr🤙🤙 並不會讓你更開心 笑死😂😂 
+                </div>
+                <div class="tab-pane fade" id="copy" role="tabpanel" aria-labelledby="copy-tab">
+                    <ul>
+                        <li>
+                            <a href="https://forum.gamer.com.tw/C.php?bsn=60076&snA=5569565">
+                                【問題】有哪些好用的複製文？@巴哈姆特
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.dcard.tw/f/whysoserious/p/236849804">
+                                複製文串@Dcard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.pttweb.cc/bbs/Gossiping/t/31534164">
+                                [問卦] Ｋ島複製文哪篇最經典？@PTT
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="what" role="tabpanel" aria-labelledby="what-tab">
+                    <h5>
+                        複製文
+                    </h5>
+                    複製文是來自 <a href="https://pttpedia.fandom.com/zh/wiki/K%E5%B3%B6" target="_blank">K島</a> 的文體，是指某些情節誇張、不斷被複製貼上重發的 <a href="https://pttpedia.fandom.com/zh/wiki/%E5%B9%BB%E6%83%B3%E6%96%87" target="_blank">幻想文</a> 。
+                    <br>
+                    目前在 PTT 還很少出現。在香港高登論壇則有類似的 <a href="https://evchk.fandom.com/zh/wiki/%E6%BD%AE%E6%96%87" target="_blank">w:c:evchk:潮文</a> 。
+                    <br>
+                    <a href="https://pttpedia.fandom.com/zh/wiki/%E8%A4%87%E8%A3%BD%E6%96%87" target="_blank">
+                        參考條目：PTT鄉民百科
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+</body>
+</html>
