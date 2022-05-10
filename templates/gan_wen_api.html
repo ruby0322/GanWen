@@ -37,7 +37,7 @@
                 apiUrl = `https://ganwenapi.herokuapp.com/gan_text?to_convert=${toConvert}`;
 
                 fetch(apiUrl)
-                .then(response => console.log(response.text()+""));
+                .then(response => console.log(response.data));
             };
             const convert = async () => {
                 const toConvert = document.querySelector('#input').value;
