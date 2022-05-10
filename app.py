@@ -9,7 +9,7 @@ def hello() -> str:
     return """Hello, welcome to GAN API."""
 
 @app.route('/gan_text', methods=['GET'])
-def rand_wiki_api() -> str:
+def gan_text_api() -> str:
     return {
         'converted': convert(request.args.get("to_convert"))
     }
