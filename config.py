@@ -72,5 +72,3 @@ def random_wiki() -> dict:
         'content': content,
         'link': link
     }
-
-print(random_wiki())
