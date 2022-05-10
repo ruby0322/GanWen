@@ -38,5 +38,5 @@ const randWiki = async () => {
 
     fetch(apiUrl)
     .then(response => response.json())
-    .then(data => fetchGanTextAPI({converted: data['content']}));
+    .then(data => fetchGanTextAPI(data['content']));
 };
