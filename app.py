@@ -10,7 +10,9 @@ def hello() -> str:
 
 @app.route('/gan_text', methods=['GET'])
 def gan_text() -> str:
-    return convert(request.args.get('to_convert'))
+    return {
+        'converted': convert(request.args.get("to_convert"))
+    }
 
 @app.route('/gan', methods=['GET'])
 def gan_gui():
