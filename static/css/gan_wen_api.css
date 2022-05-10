@@ -1,3 +1,8 @@
+.all {
+    background-color: #141822; 
+    color: #778db0;
+}
+
 .main {
     display: flex;
     align-items: center;
@@ -14,9 +19,26 @@
     height: 8rem;
 }
 
+.ta {
+    outline: none;
+    background-color: #06070A; 
+    color: #FFFFFF;
+}
+
 .rf {
     width: 100%; 
     display: flex; 
     justify-content:flex-end; 
     flex-direction: row;
+}
+
+.lf {
+    width: 100%; 
+    display: flex; 
+    justify-content:flex-start; 
+    flex-direction: row;
+}
+
+.bc {
+    background-color: #6680E3;
 }
