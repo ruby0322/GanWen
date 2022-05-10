@@ -16,7 +16,7 @@ PUNCTUATION_POOL = [
 ]
 
 def generate_random_emoji_sequence() -> str:
-    return ''.join([random.choice(EMO_POOL)*2 for _ in range(2)])
+    return ' ' + ''.join([random.choice(EMO_POOL)*2 for _ in range(2)]) + ' '
 
 def generate_random_gan_text() -> str:
     return random.choice(GAN_POOL)
