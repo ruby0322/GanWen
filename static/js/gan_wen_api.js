@@ -27,8 +27,9 @@ const convert = async () => {
 };
 
 const clear = () => {
-    document.querySelector('#output').value = '';
-    document.querySelector('#output').innerHTML = '';
+    document.querySelector('#input').value = '';
+    document.querySelector('#input').innerHTML = '';
+    convert();
 };
 
 const randWiki = async () => {
