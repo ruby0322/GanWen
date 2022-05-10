@@ -32,6 +32,8 @@
             };
             const displayConverted = data => {
                 const converted = data['converted'];
+                document.querySelector('#output').value = converted;
+                document.querySelector('#output').innerHTML = converted;
                 console.log(converted);
             };
             const fetchGanTextAPI = async toConvert => {
