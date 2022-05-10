@@ -16,7 +16,7 @@ def gan_text_api() -> str:
 
 @app.route('/gan', methods=['GET'])
 def gan_gui():
-    return render_template('gan_wen_api.html')
+    return render_template('gan.html')
 
 @app.route('/examples', methods=['GET'])
 def examples():
