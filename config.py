@@ -32,7 +32,7 @@ PUNCTUATION_POOL = [
 def generate_random_emoji_sequence() -> str:
     emo = random.sample(EMO_POOL, 2) * 2
     emo[1], emo[2] = emo[2], emo[1]
-    return ''.join(emo)
+    return ' ' + ''.join(emo) + ' '
 
 def generate_random_gan_text() -> str:
     return random.choice(GAN_POOL)
