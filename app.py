@@ -9,7 +9,7 @@ def hello() -> str:
     return """Hello, welcome to GAN API."""
 
 @app.route('/gan_text', methods=['GET'])
-def gan_text() -> str:
+def rand_wiki_api() -> str:
     return {
         'converted': convert(request.args.get("to_convert"))
     }
@@ -19,8 +19,8 @@ def gan_gui():
     return render_template('gan_wen_api.html')
 
 @app.route('/rand_wiki', methods=['GET'])
-def rand_wiki():
-    return rand_wiki()
+def rand_wiki_api():
+    return random_wiki()
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
