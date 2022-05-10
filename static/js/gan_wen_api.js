@@ -33,10 +33,18 @@ const resetInput = () => {
     convert();
 };
 
+const setInput = text => {
+    document.querySelector('#input').value = text;
+    document.querySelector('#input').innerHTML = text;
+    return text;
+};
+
 const randWiki = async () => {
     apiUrl = 'https://ganwenapi.herokuapp.com/rand_wiki';
 
     fetch(apiUrl)
     .then(response => response.json())
-    .then(data => fetchGanTextAPI(data['content']));
+    .then(data => data[content])
+    .then(text => setInput(text))
+    .then(text => fetchGanTextAPI(text));
 };
