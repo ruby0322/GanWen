@@ -22,6 +22,10 @@ def gan_gui():
 def examples():
     return render_template('examples.html')
 
+@app.route('/tutorial', methods=['GET'])
+def tutorial():
+    return render_template('tutorial.html')
+
 @app.route('/rand_wiki', methods=['GET'])
 def rand_wiki_api():
     return random_wiki()
