@@ -18,6 +18,10 @@ def gan_text_api() -> str:
 def gan_gui():
     return render_template('gan_wen_api.html')
 
+@app.route('/examples', methods=['GET'])
+def examples():
+    return render_template('examples.html')
+
 @app.route('/rand_wiki', methods=['GET'])
 def rand_wiki_api():
     return random_wiki()
