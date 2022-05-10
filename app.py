@@ -18,7 +18,7 @@ def gan_text() -> str:
 def gan_gui():
     return render_template('gan_wen_api.html')
 
-@app.route('rand_wiki', methods=['GET'])
+@app.route('/rand_wiki', methods=['GET'])
 def rand_wiki():
     return rand_wiki()
 
