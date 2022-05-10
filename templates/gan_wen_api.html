@@ -30,13 +30,16 @@
                 document.querySelector('#output').select();
                 document.execCommand('Copy');
             };
+            const displayConverted = converted => {
+
+            };
             const fetchGanTextAPI = async toConvert => {
                 apiUrl = `https://ganwenapi.herokuapp.com/gan_text?to_convert=${toConvert}`;
 
                 fetch(apiUrl)
-                .then(response => console.log(response.text()));
+                .then(response => console.log(response.text()+""));
             };
-            const convert = () => {
+            const convert = async () => {
                 const toConvert = document.querySelector('#input').value;
                 fetchGanTextAPI(toConvert);
             };
