@@ -19,6 +19,7 @@ def generate_random_gan_text() -> str:
     return random.choice(GAN_POOL)
 
 def convert(string: str) -> str:
+    print(string)
     for punctuation in PUNCTUATION_POOL:
         punctuation_cnt = string.count(punctuation)
         for _ in range(punctuation_cnt):
