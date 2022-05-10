@@ -1,7 +1,7 @@
 import random
 
 EMO_POOL = ['😂', '👍', '🤙', '😎', '😳', '💪', '👌', '🖖', '🈹',' ⚡', '💦', '🤪', '🥵']
-GAN_POOL = [' skrskr🤙🤙 ', ' 很厲害欸😎😎 ', ' peace ', ' 笑死😂😂 ', ' 哈哈是我啦 ', ' 好屌🍆喔 ', ' 可以養嗎😳😳 ']
+GAN_POOL = [' skrskr🤙🤙 ', ' 很厲害欸😎😎 ', ' peace ', ' 笑死😂😂 ', ' 哈哈是我啦 ', ' 好屌🍆喔 ', ' 可以養嗎😳😳 ', ' 好像沒有變🙄🙄 ']
 
 FULL_COMMA = '，'
 FULL_PERIOD = '。'
@@ -13,7 +13,7 @@ END_OF_LINE = '[[endl]]'
 
 PUNCTUATION_POOL = [
     FULL_COMMA, FULL_PERIOD, FULL_EXCLAMATION, 
-    HALF_COMMA, HALF_PERIOD, HALF_EXCLAMATION,
+    HALF_COMMA, HALF_EXCLAMATION,
     END_OF_LINE
 ] 
 
