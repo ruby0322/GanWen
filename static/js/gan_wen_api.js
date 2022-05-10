@@ -17,5 +17,6 @@ const fetchGanTextAPI = async toConvert => {
 };
 const convert = async () => {
     const toConvert = document.querySelector('#input').value;
+    console.log(toConvert);
     fetchGanTextAPI(toConvert);
 };
