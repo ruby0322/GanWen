@@ -97,22 +97,37 @@
         <div class="content-width" class="lf mar">
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="gan1-tab" data-bs-toggle="pill" data-bs-target="#gan1" type="button" role="tab" aria-controls="pills-home" aria-selected="true">需要範例？</button>
+                  <button class="nav-link active" id="feedback-tab" data-bs-toggle="pill" data-bs-target="#feedback" type="button" role="tab" aria-controls="pills-home" aria-selected="true">有話想說？</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="examples-tab" data-bs-toggle="pill" data-bs-target="#examples" type="button" role="tab" aria-controls="pills-home" aria-selected="true">需要範例？</button>
                 </li>
                 <li class="nav-item" role="presentation">
                   <button class="nav-link" id="what-tab" data-bs-toggle="pill" data-bs-target="#what" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">這是什麼梗？</button>
                 </li>
               </ul>
               <div class="tab-content" id="pills-tabContent" style="height: 4rem;">
-                <div class="tab-pane fade show active" id="gan1" role="tabpanel" aria-labelledby="gan1-tab">
-                    請參考 <a href="https://ganwenapi.herokuapp.com/what">這是什麼梗</a> 頁面。
+                <div class="tab-pane fade show active" id="feedback" role="tabpanel" aria-labelledby="feedback-tab">
+                    對使用這介面不滿意嗎？對幹話生成器的算法有建議嗎？
                     <br>
-                    〔註：請點擊連結或右上角選單下拉切換頁面。〕
+                    有任何問題都非常歡迎填寫 
+                    <a href="https://forms.gle/u9mpcRhYdNbVMDHN6" target="_blank">
+                        回饋表單
+                    </a> ！
+                </div>
+                <div class="tab-pane fade" id="examples" role="tabpanel" aria-labelledby="examples-tab">
+                    <div class="d-grid gap-2">
+                        <a class="btn btn-outline-info" type="button" href="https://ganwenapi.herokuapp.com/gan">
+                            請參考這是什麼梗頁面
+                        </a>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="what" role="tabpanel" aria-labelledby="what-tab">
-                    請參考 <a href="https://ganwenapi.herokuapp.com/what">這是什麼梗</a> 頁面。
-                    <br>
-                    〔註：請點擊連結或右上角選單下拉切換頁面。〕
+                    <div class="d-grid gap-2">
+                        <a class="btn btn-outline-info" type="button" href="https://ganwenapi.herokuapp.com/gan">
+                            請參考這是什麼梗頁面
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
