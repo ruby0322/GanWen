@@ -30,6 +30,14 @@ def tutorial():
 def rand_wiki_api():
     return random_wiki()
 
+@app.route('/about', methods=['GET'])
+def about():
+    return render_template('about.html')
+
+@app.route('/api', methods=['GET'])
+def about():
+    return render_template('api.html')
+
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
