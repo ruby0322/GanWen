@@ -1,4 +1,5 @@
 import os
+import re
 from flask import Flask, request, abort, render_template
 from config import *
 
@@ -18,10 +19,6 @@ def gan_text_api() -> str:
 def gan_gui():
     return render_template('gan.html')
 
-@app.route('/examples', methods=['GET'])
-def examples():
-    return render_template('examples.html')
-
 @app.route('/tutorial', methods=['GET'])
 def tutorial():
     return render_template('tutorial.html')
@@ -35,8 +32,12 @@ def about():
     return render_template('about.html')
 
 @app.route('/api', methods=['GET'])
-def about():
+def api():
     return render_template('api.html')
+
+@app.route('/what', methods=['GET'])
+def what():
+    return render_template('what.html')
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
