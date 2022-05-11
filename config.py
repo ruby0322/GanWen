@@ -46,7 +46,7 @@ def convert(string: str) -> str:
     for punctuation in PUNCTUATION_POOL:
         punctuation_cnt = string.count(punctuation)
         for _ in range(punctuation_cnt):
-            additive_gen = random.choice([generate_random_emoji_sequence, generate_random_gan_text])
+            additive_gen = random.choice([generate_random_emoji_sequence]*2+[generate_random_gan_text]*3)
             string = string.replace(punctuation, additive_gen(), 1)
     return string
 
