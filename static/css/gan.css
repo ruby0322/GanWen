@@ -72,3 +72,9 @@
         width: 50%;
     }
 }
+
+.title {
+    font-size: xx-large;
+    margin: .5rem;
+    margin-left: -5px;
+}
