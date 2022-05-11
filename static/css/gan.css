@@ -82,6 +82,14 @@
     padding-left: 5px;
 }
 
+.header {
+    margin-left: .2rem;
+    font-size: 3.2rem;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+    font-weight: 500;
+}
+
 a {
     text-decoration: none !important;
 }
