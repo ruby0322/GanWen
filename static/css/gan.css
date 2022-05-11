@@ -1,6 +1,6 @@
 .all {
-    background-color: #141822; 
-    color: #778db0;
+    background-color: #141822 !important; 
+    color: #778db0 !important;
 }
 
 .main {
@@ -96,4 +96,11 @@ a {
 
 .ps {
     margin-bottom: 0;
+}
+
+.toggle-list {
+    background-color: #141822 !important; 
+    color: #778db0 !important;
+    border: .4px solid #778db0 !important;
+    border-radius: 5px;
 }
