@@ -1,13 +1,13 @@
 import os
 import re
-from flask import Flask, request, abort, render_template
+from flask import Flask, request, abort, render_template, redirect
 from config import *
 
 app = Flask(__name__)
 
 @app.route('/')
 def hello() -> str:
-    return """Hello, welcome to GAN API."""
+    return redirect('https://ganwenapi.herokuapp.com/gan')
 
 @app.route('/gan_text', methods=['GET'])
 def gan_text_api() -> str:
