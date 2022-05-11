@@ -93,3 +93,7 @@
 a {
     text-decoration: none !important;
 }
+
+.ps {
+    margin-bottom: 0;
+}
