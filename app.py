@@ -18,7 +18,7 @@ def gan_text_api():
 @app.route('/bs', methods=['GET'])
 def bullshit():
     return {
-        'bullshit': get_bs(request.args.get('kw'), request.args.get('len'))
+        'bullshit': get_bs(request.args.get('topic'), request.args.get('len'))
     }
 
 @app.route('/gan', methods=['GET'])

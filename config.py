@@ -79,6 +79,8 @@ def get_bs(topic, min_len=50):
     data = json.dumps({"Topic": topic, "MinLen": min_len})
 
     response = requests.post(
-        "https://api.howtobullshit.me/bullshit", data=data).text.replace('&nbsp;', '').replace('<br>', '\n')
+        "https://api.howtobullshit.me/bullshit", data=data).text.replace('&nbsp;', '').replace('<br>', '\n').replace('Bad Request', '')
 
     return response
+
+print(get_bs('這段日子以來，我一直想對你說三個字，但又怕說了連普通朋友也做不成，可我控制不住，還是想說：「借點錢！」', 50))
