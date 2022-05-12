@@ -48,3 +48,12 @@ const randWiki = async () => {
     .then(text => setInput(text))
     .then(text => fetchGanTextAPI(text));
 };
+
+const bullshit = async len => {
+    apiUrl = 'https://ganwenapi.herokuapp.com/bs';
+    params = `?kw=${document.querySelector('#input').value}&len=${len}`;
+    fetch(apiUrl+params)
+    .then(response => response.json())
+    .then(data => data['bullshit'])
+    .then(text => fetchGanTextAPI(text));
+};

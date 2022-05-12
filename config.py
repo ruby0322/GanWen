@@ -2,6 +2,7 @@ import random
 import requests
 from bs4 import BeautifulSoup
 import urllib
+import json
 
 EMO_POOL = [
     '😂', '👍', '🤙', '😎', '😳', 
@@ -72,3 +73,12 @@ def random_wiki() -> dict:
         'content': content,
         'link': link
     }
+
+def get_bs(topic, min_len=50):
+
+    data = json.dumps({"Topic": topic, "MinLen": min_len})
+
+    response = requests.post(
+        "https://api.howtobullshit.me/bullshit", data=data).text.replace('&nbsp;', '').replace('<br>', '\n')
+
+    return response

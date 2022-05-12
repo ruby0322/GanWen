@@ -6,13 +6,19 @@ from config import *
 app = Flask(__name__)
 
 @app.route('/')
-def hello() -> str:
+def hello():
     return redirect('https://ganwenapi.herokuapp.com/gan')
 
 @app.route('/gan_text', methods=['GET'])
-def gan_text_api() -> str:
+def gan_text_api():
     return {
         'converted': convert(request.args.get("to_convert"))
+    }
+
+@app.route('/bs', methods=['GET'])
+def bullshit():
+    return {
+        'bullshit': get_bs(request.args.get('kw'), request.args.get('len'))
     }
 
 @app.route('/gan', methods=['GET'])
@@ -38,6 +44,8 @@ def api():
 @app.route('/what', methods=['GET'])
 def what():
     return render_template('what.html')
+
+
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
